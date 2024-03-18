@@ -13,7 +13,7 @@ docker login
 docker logout
 ## Image
 
-// Pull Docker Image
+### Pull Docker Image
 docker pull [imageName]
 
 ### Push Docker Image
