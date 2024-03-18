@@ -1,6 +1,7 @@
 # Docker
 This is Docker learning repo
-// Check Docker Version 
+
+## Check Docker Version 
  docker -v
  
 #### create docker volume
@@ -22,13 +23,13 @@ docker push [imageName]
 ### Build Image
 docker build -t [give imageName] [directory (. for current directory)]
 
-###Build by given Image name
+### Build by given Image name
 docker build -f [given image name] -t [give imageName] [directory (. for current directory)]
 
 ### commit Docker 
 docker commit 
 
-###copy image
+### copy image
 docker copy [imageName]
 
 
@@ -39,13 +40,13 @@ docker images
 ### Image search
 docker search [searchQuery]
 
-###Run Image to make Docker Container
+### Run Image to make Docker Container
 docker run [imageName/imageId]
 docker run --name [Give the name to the container] -d [imageName/imageId]     (-d -> detached) | use -it before -d to run in background (-it -> interactive mode)
 
 ## Docker Container
 
-###List of Docker Containers
+### List of Docker Containers
 docker ps (currently running container)
 docker ps -a (all the container)
 
@@ -77,14 +78,14 @@ docker port [containerName/containerId]
 docker exec -it [containerId/containerName] bash
 
 
-##//Nginx in Docker
+## Nginx in Docker
 
 (-- containerName is nginx-base)
 
 ### copy default.conf to givenFolder/file
 docker cp nginx-base:/etc/nginx/conf.d/default.conf default.conf      (here default.conf is given file name)
 
-After do configuration re-past default.conf to nginx server file 
+#### After do configuration re-past default.conf to nginx server file 
 docker cp default.conf nginx-base:/etc/nginx/conf.d/default.conf 
 
 ### nginx validation of config file
