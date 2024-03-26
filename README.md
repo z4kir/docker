@@ -2,7 +2,7 @@
 This is Docker learning repo
 
 ## Check Docker Version 
- docker -v
+ `docker -v`
  
 #### create docker volume
 docker volume
