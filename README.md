@@ -113,8 +113,9 @@ This is Docker learning repo
  `docker run -d --name [given container name] -e MYSQL_ROOT_PASSWORD=strong_password -p 3307:3306 mysql`
 
 ### full mysql run command
-```docker run --name mysql8 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=testdb -e MYSQL_USER=admin -e 
-MYSQL_PASSWORD=root -d mysql:8.0.20```
+```
+docker run --name mysql8 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=testdb -e MYSQL_USER=admin -e MYSQL_PASSWORD=root -d mysql:8.0.20
+```
 
 ### Mysql server run
 `docker exec -it mysqlDb  bash`
